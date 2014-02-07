@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Test Page</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Brad Miller">
+	<!-- Date: 2007-09-03 -->
+</head>
+<body>
+<h1>Hello CS-365</h1>
+<p>This page demonstrates a bunch of html tags.</p>
+
+<h2>Here are some lists of things</h2>
+<ol>
+    <li>This is an ordered list.</li>
+    <li>Add another item above this one</li>
+</ol>
+
+<ul>
+    <li>This is an unordered list</li>
+    <li>Add an item below this one</li>
+</ul>
+
+<dl>
+    <dt><strong>Description Lists</strong></dt><dd>Description lists contain a title and some detailed explanation</dd>
+    <dt><strong>http</strong></dt><dd>Hypter Text Transfer Protocol. The language of web servers and browsers.</dd>
+</dl>
+<p>Sometimes you want to include code that you don't want rendered by the browser.  In that case use a &lt;pre&gt; tag.</p>
+<pre>
+    for i in range(10):
+        print("hello world")
+</pre>
+
+<p>Now, if you want to make some changes to these do the following:</p>
+<pre>
+    git checkout -b mychanges
+</pre>
+<p>This makes a local branch for you to play with.  Once you are done making the suggested changes do this:</p>
+<pre>
+    git commit -m 'These are my changes'
+</pre>
+<p>Now if you check the page in the browser you should see your changes.  To get back to my page without your changes do this:</p>
+<pre>
+    git checkout master
+</pre>
+<p>Now when you refresh your changes are gone.</p>
+<pre>
+    git checkout mychanges
+</pre>
+<p>Now they are back again.</p>
+
+<p>Of course, nobody wants a web page without an image on it.  <img src="biker_shadow.jpg" /> Notice that there is no &lt;/img&gt; tag.  The image tag closes itself with the slash at the end as there is no reason to have anything between the open and the close.</p>
+
+<p>Well thats a bit big.  See if you can figure out how to scale the image to a more appropriate size.</p>
+
+<p>What makes the web great is the ability to link from one page to the next.  You can link to a page on a completely different site, like this: <a href="http://knuth.luther.edu/~bmiller/page2.html">On knuth</a></p>
+<p>Or you can link to a page on the same site using a simpler reference <a href="second.html">Here</a></p>
+
+When you are developing a web page, it is easy to run a python program as a simple web server.  Make sure your working directory is the directory that has your files in it, and then run <code>python3 -m http.server</code>  This will start a webserver on port 8000.  To bring up this page in your browser (running on the same machine) try this:  <code>http://localhost:8000/first.html</code>
+</body>
+</html>
