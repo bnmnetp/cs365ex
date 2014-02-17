@@ -17,20 +17,25 @@ This Is A New Project
 SECTION 1: A Random Section
 :::::::::::::::::::::::::::
 
-.. toctree::
-   :maxdepth: 2
-
-   functions.rst
-   DataStructures/queues.rst
 
 
-SECTION 2: Another Random Section
-:::::::::::::::::::::::::::::::::
+.. activecode:: example1
 
-.. toctree::
-   :maxdepth: 2
+   print 'hello world!'
+   
+   
+   
+Turtles
+-------
 
-   morecontent.rst
-   words.rst
-   somestuff.rst
-   MoreThings/apples.rst
+.. activecode:: example2
+
+   import turtle
+   t = turtle.Turtle()
+   
+   for i in range(4):
+       t.forward(100)
+       t.right(90)
+
+
+That is all

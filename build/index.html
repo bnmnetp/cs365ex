@@ -242,9 +242,7 @@
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">This Is A New Project</a><ul>
 <li><a class="reference internal" href="#section-1-a-random-section">SECTION 1: A Random Section</a><ul>
-</ul>
-</li>
-<li><a class="reference internal" href="#section-2-another-random-section">SECTION 2: Another Random Section</a><ul>
+<li><a class="reference internal" href="#turtles">Turtles</a></li>
 </ul>
 </li>
 </ul>
@@ -283,16 +281,94 @@
 <h1>This Is A New Project<a class="headerlink" href="#this-is-a-new-project" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="section-1-a-random-section">
 <h2>SECTION 1: A Random Section<a class="headerlink" href="#section-1-a-random-section" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul class="simple">
-</ul>
+
+<div id="example1" lang="python" >
+
+<br/>
+<div id="example1_code_div" style="display: block">
+<textarea cols="50" rows="12" id="example1_code" class="active_code", prefixcode="undefined" lang="python">
+print 'hello world!'
+</textarea>
 </div>
+<p class="ac_caption"><span class="ac_caption_text"> (example1)</span> </p>
+
+<button class='btn btn-success' id="example1_runb" onclick="runit('example1',this, undefined);">Run</button>
+
+<div id="cont"></div>
+
+<button class="ac_opt btn btn-default" style="display: inline-block" id="example1_saveb" onclick="saveEditor('example1');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="example1_loadb" onclick="requestCode('example1');">Load</button>
+
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#example1_saveb').toggle();
+    $('#example1_loadb').toggle();
+}
+</script>
+
+
+<div style="text-align: center">
+<canvas id="example1_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
 </div>
-<div class="section" id="section-2-another-random-section">
-<h2>SECTION 2: Another Random Section<a class="headerlink" href="#section-2-another-random-section" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul class="simple">
-</ul>
+<pre id="example1_suffix" style="display:none">
+</pre>
+<pre id="example1_pre" class="active_out">
+
+</pre>
+
+
+</div>
+
+<div class="section" id="turtles">
+<h3>Turtles<a class="headerlink" href="#turtles" title="Permalink to this headline">¶</a></h3>
+
+<div id="example2" lang="python" >
+
+<br/>
+<div id="example2_code_div" style="display: block">
+<textarea cols="50" rows="12" id="example2_code" class="active_code", prefixcode="undefined" lang="python">
+import turtle
+t = turtle.Turtle()
+
+for i in range(4):
+    t.forward(100)
+    t.right(90)
+</textarea>
+</div>
+<p class="ac_caption"><span class="ac_caption_text"> (example2)</span> </p>
+
+<button class='btn btn-success' id="example2_runb" onclick="runit('example2',this, undefined);">Run</button>
+
+<div id="cont"></div>
+
+<button class="ac_opt btn btn-default" style="display: inline-block" id="example2_saveb" onclick="saveEditor('example2');">Save</button>
+<button class="ac_opt btn btn-default" style="display: inline-block" id="example2_loadb" onclick="requestCode('example2');">Load</button>
+
+<script>
+if ('block' == 'none') {
+    // a hack to preserve the inline-block display style. Toggle() will use display: block
+    // (instead of inline-block) if the previous display style was 'none'
+    $('#example2_saveb').toggle();
+    $('#example2_loadb').toggle();
+}
+</script>
+
+
+<div style="text-align: center">
+<canvas id="example2_canvas" class="ac-canvas" height="400" width="400" style="border-style: solid; display: none; text-align: center"></canvas>
+</div>
+<pre id="example2_suffix" style="display:none">
+</pre>
+<pre id="example2_pre" class="active_out">
+
+</pre>
+
+
+</div>
+
+<p>That is all</p>
 </div>
 </div>
 </div>

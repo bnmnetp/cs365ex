@@ -1,1 +1,1 @@
-Search.setIndex({objects:{},terms:{anoth:0,section:0,random:0,project:0,thi:0,"new":0},objtypes:{},titles:["This Is A New Project"],objnames:{},filenames:["index"]})
+Search.setIndex({objects:{},terms:{all:0,turtl:0,anoth:[],section:0,random:0,project:0,thi:0,"new":0},objtypes:{},titles:["This Is A New Project"],objnames:{},filenames:["index"]})
