@@ -1,0 +1,29 @@
+p {
+    font-size: 18pt;
+}
+.floater1 {
+    background-color: #222;
+    color: #fff;
+    height: 50px;
+}
+
+.floater2 {
+    background-color: #444;
+    color: #fff;
+    height: 150px;
+    width: 50%;
+}
+
+.floater3 {
+    background-color: #666;
+    height: 50px;
+}
+
+.floater4 {
+    background-color: #888;
+    height: 50px;
+}
+
+.narrow {
+    width: 50px;
+}
