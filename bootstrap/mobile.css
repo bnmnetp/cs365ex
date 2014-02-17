@@ -1,0 +1,33 @@
+.floater1 {
+    background-color: #DDD;
+    height: 150px;
+}
+
+.floater2 {
+    background-color: #DD0;
+    height: 150px;
+}
+
+.floater3 {
+    background-color: #D0D;
+    height: 150px;
+}
+
+.floater4 {
+    background-color: #EEE;
+    height: 150px;
+}
+
+body {
+    padding-top: 50px;
+}
+
+@media (max-width: 480px) { 
+        body {
+          font-size: 20px;
+        }
+
+        .hidden-phone {
+           display: block;
+        }
+    }
