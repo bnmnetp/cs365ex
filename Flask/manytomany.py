@@ -26,14 +26,14 @@ class Course(db.Model):
     room = db.Column(db.Integer)
     students = db.relationship('Student', secondary=enrollment,
                                 backref=db.backref('courses',lazy='dynamic'))
-    
+
 class Student(db.Model):
     __tablename__ = 'student'
     student_id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.Text)
     last_name = db.Column(db.Text)
 
-db.drop_all()    
+db.drop_all()
 db.create_all()
 
 s1 = Student(student_id=1,first_name='Brad',last_name='Miller')
